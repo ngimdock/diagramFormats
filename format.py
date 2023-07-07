@@ -49,17 +49,27 @@ color_map = plt.cm.get_cmap("tab20", len(unique_values))
 plt.scatter(
     abscisse,
     ordonne,
-    # c=[unique_values.index(value) for value in values],
-    # cmap=color_map,
+    c=[unique_values.index(value) for value in values],
+    cmap=color_map,
+    # marker="^",
+    # marker="s",
 )
 
 for i, txt in enumerate(values):
     plt.annotate(
-        txt, (abscisse[i], ordonne[i]), xytext=(5, 5), textcoords="offset points"
+        txt,
+        (abscisse[i], ordonne[i]),
+        xytext=(5, 5),
+        textcoords="offset points",
+        fontsize=7,
     )
 
 plt.xlabel("Domaines d'utilisation")
 plt.ylabel("Années de sortie")
 plt.title("Représentation des formats de données")
-# plt.colorbar(ticks=range(len(unique_values)), label="Values")
+plt.xticks(fontsize=7, rotation=10)
+
+plt.colorbar(ticks=range(len(unique_values)), label="Values")
+
+
 plt.show()
