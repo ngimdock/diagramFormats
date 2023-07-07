@@ -30,3 +30,10 @@ class UseArea(str, Enum):
     INTERNET_OF_THINGS = "Internet of Things"
     GAMES = "Games"
     DISTRIBUTED_COMPUTING = "Distributed Computing"
+
+
+class Figure(str, Enum):
+    CIRCLE = "o"
+    SQUARE = "s"
+    TRIANGLE_UP = "^"
+    TRIANGLE_DOWN = "v"

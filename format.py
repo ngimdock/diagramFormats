@@ -1,31 +1,49 @@
-from data import FormatType, UseArea
+from data import FormatType, UseArea, Figure
 import matplotlib.pyplot as plt
 
 
 class Format:
-    def __init__(self, typeFormat: FormatType, releaseDate: int, useArea: UseArea):
+    def __init__(
+        self, typeFormat: FormatType, releaseDate: int, useArea: UseArea, figure: Figure
+    ):
         self.typeFormat = typeFormat
         self.releaseDate = releaseDate
         self.useArea = useArea
+        self.figure = figure
 
 
 newFormat = Format(FormatType.CSV, 2020, UseArea.SPREAD_SHEET)
 
 dataSet = [
-    Format(FormatType.CSV, 1983, UseArea.SPREAD_SHEET),
-    Format(FormatType.ASN_1, 1984, UseArea.TELECAMMUNNICATION),
-    Format(FormatType.XML, 1996, UseArea.WEB_APPLICATION),
-    Format(FormatType.PROCOLE_BUFFERS, 2001, UseArea.DISTRIBUTED_COMPUTING),
-    Format(FormatType.JSON, 2006, UseArea.WEB_APPLICATION),
-    Format(FormatType.APACHE_THRIFT, 2006, UseArea.DISTRIBUTED_COMPUTING),
-    Format(FormatType.MASSAGE_PACK, 2009, UseArea.DISTRIBUTED_COMPUTING),
-    Format(FormatType.BSON, 2010, UseArea.DATABASES),
-    Format(FormatType.MICROSOFT_BOND, 2011, UseArea.DISTRIBUTED_COMPUTING),
-    Format(FormatType.TOML, 2013, UseArea.SOFTWARE_CONFIGURATION),
-    Format(FormatType.CBOR, 2013, UseArea.INTERNET_OF_THINGS),
-    Format(FormatType.CAPTN_PROTO, 2013, UseArea.DISTRIBUTED_COMPUTING),
-    Format(FormatType.FLAT_BUFFERS, 2014, UseArea.GAMES),
-    Format(FormatType.FLEX_BUFFERS, 2016, UseArea.GAMES),
+    Format(FormatType.CSV, 1983, UseArea.SPREAD_SHEET, Figure.SQUARE),
+    Format(FormatType.ASN_1, 1984, UseArea.TELECAMMUNNICATION, Figure.CIRCLE),
+    Format(FormatType.XML, 1996, UseArea.WEB_APPLICATION, Figure.TRIANGLE_DOWN),
+    Format(
+        FormatType.PROCOLE_BUFFERS,
+        2001,
+        UseArea.DISTRIBUTED_COMPUTING,
+        Figure.TRIANGLE_UP,
+    ),
+    Format(FormatType.JSON, 2006, UseArea.WEB_APPLICATION, Figure.TRIANGLE_UP),
+    Format(
+        FormatType.APACHE_THRIFT,
+        2006,
+        UseArea.DISTRIBUTED_COMPUTING,
+        Figure.TRIANGLE_DOWN,
+    ),
+    Format(FormatType.MASSAGE_PACK, 2009, UseArea.DISTRIBUTED_COMPUTING, Figure.CIRCLE),
+    Format(FormatType.BSON, 2010, UseArea.DATABASES, Figure.TRIANGLE_DOWN),
+    Format(
+        FormatType.MICROSOFT_BOND,
+        2011,
+        UseArea.DISTRIBUTED_COMPUTING,
+        Figure.TRIANGLE_DOWN,
+    ),
+    Format(FormatType.TOML, 2013, UseArea.SOFTWARE_CONFIGURATION, Figure.CIRCLE),
+    Format(FormatType.CBOR, 2013, UseArea.INTERNET_OF_THINGS, Figure.SQUARE),
+    Format(FormatType.CAPTN_PROTO, 2013, UseArea.DISTRIBUTED_COMPUTING, Figure.SQUARE),
+    Format(FormatType.FLAT_BUFFERS, 2014, UseArea.GAMES, Figure.CIRCLE),
+    Format(FormatType.FLEX_BUFFERS, 2016, UseArea.GAMES, Figure.TRIANGLE_UP),
 ]
 
 fiagramData = list(
