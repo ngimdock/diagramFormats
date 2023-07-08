@@ -5,11 +5,11 @@ Tracer un repère pour représenter les formats des données dans un repaire ort
 # Lancer le projet
 
 ```bash
-python format.py
+python create_diagram.py
 ```
 
 ou
 
 ```bash
-python3 format.py
+python3 create_diagram.py
 ```
