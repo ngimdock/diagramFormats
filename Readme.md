@@ -26,14 +26,14 @@ python3 create_diagram.py
 
 # Generate the project without the text in the diagram
 
-To generate the diagram without the text, you need to change the project branch to the no-text branch and run the project again.
+To generate the diagram without the text, you need to change the project branch to the n branch `without_text` and run the project again.
 
-The project has 2 branches, one where there is text on the diagram(main) and the other where there is no text on the diagram(no_branc)
+The project has 2 branches, one where there is text on the diagram(main) and the other where there is no text on the diagram(without_text)
 
 # To change branch
 
 ```bash
-get checkout no_text
+get checkout without_text
 ```
 
 ```bash
