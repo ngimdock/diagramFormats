@@ -2,13 +2,13 @@
 
 Draw a reference frame to represent data formats in an orthogonal reference frame.
 
-# Lancer le projet
+# Run the project
 
 ```bash
 python create_diagram.py
 ```
 
-ou
+or
 
 ```bash
 python3 create_diagram.py
