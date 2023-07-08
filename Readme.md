@@ -2,7 +2,13 @@
 
 Draw a reference frame to represent data formats in an orthogonal reference frame.
 
-# How to generate the diagram
+# First you need to clone the projet localy
+
+```
+git clone https://github.com/ngimdock/diagramFormats.git
+```
+
+# Generate the diagram
 
 To generate the diagram, you only need to execute the program. Once the program has been executed, a new window will appear with the diagram drawn, so you can enlarge the window and download the diagram as an image (in png format).
 
