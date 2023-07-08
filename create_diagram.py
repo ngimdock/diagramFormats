@@ -126,7 +126,7 @@ def MarkDatasetElements(plt, dataset):
             xytext=(5, 5),
             textcoords="offset points",
             fontsize=7,
-            # color=dataSet[i].markColor,
+            color=dataSet[i].markColor,
         )
 
 

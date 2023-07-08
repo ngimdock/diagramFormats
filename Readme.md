@@ -1,6 +1,6 @@
 # FormatDate
 
-Tracer un repère pour représenter les formats des données dans un repaire orthogonal.
+Draw a reference frame to represent data formats in an orthogonal reference frame.
 
 # Lancer le projet
 
