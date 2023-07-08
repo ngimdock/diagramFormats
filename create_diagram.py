@@ -123,9 +123,11 @@ def MarkDatasetElements(plt, dataset):
         plt.annotate(
             dataSet[i].typeFormat.value,
             (abscisse[i], ordonne[i]),
-            xytext=(5, 5),
+            xytext=(5, 8),
             textcoords="offset points",
             fontsize=7,
+            va="center",
+            ha="center",
             # color=dataSet[i].markColor,
         )
 
