@@ -95,6 +95,11 @@ abscisse = [obj["abscisse"] for obj in figureDate]
 ordonne = [obj["ordonne"] for obj in figureDate]
 marks = [obj["mark"] for obj in figureDate]
 
+abscisse2 = ["hello", "world"]
+new_array = abscisse + ["#"]
+
+print(new_array)
+
 
 def BuildDiagram(plt, abscisses, ordonnes):
     plt.scatter(
@@ -105,9 +110,9 @@ def BuildDiagram(plt, abscisses, ordonnes):
 
     plt.grid(True, linestyle="dashed", color="#d6d6d6", linewidth=0.5)
 
-    plt.xlabel("Domaines d'utilisation")
+    plt.xlabel("Domaines d'application")
     plt.ylabel("Années de sortie")
-    plt.title("Représentation des formats de données")
+    # plt.title("Représentation des formats de données")
     plt.xticks(fontsize=7, rotation=10)
 
 
@@ -121,11 +126,13 @@ def MarkDatasetElements(plt, dataset):
             color=dataSet[i].markColor,
         )
         plt.annotate(
-            dataSet[i].typeFormat.value,
+            "",
             (abscisse[i], ordonne[i]),
-            xytext=(5, 5),
+            xytext=(5, 8),
             textcoords="offset points",
             fontsize=7,
+            va="center",
+            ha="center",
             # color=dataSet[i].markColor,
         )
 
