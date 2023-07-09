@@ -106,8 +106,7 @@ def BuildDiagram(plt, abscisses, ordonnes):
     plt.grid(True, linestyle="dashed", color="#d6d6d6", linewidth=0.5)
 
     plt.xlabel("Domaines d'utilisation")
-    plt.ylabel("Années de sortie")
-    plt.title("Représentation des formats de données")
+    # plt.title("Représentation des formats de données")
     plt.xticks(fontsize=7, rotation=10)
 
 
