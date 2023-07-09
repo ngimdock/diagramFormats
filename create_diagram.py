@@ -108,7 +108,7 @@ def BuildDiagram(plt, abscisses, ordonnes):
     plt.xlabel("Domaines d'utilisation")
     plt.ylabel("Années")
     # plt.title("Représentation des formats de données")
-    plt.xticks(fontsize=7, rotation=10)
+    plt.xticks(fontsize=9, rotation=10)
 
 
 def MarkDatasetElements(plt, dataset):
@@ -125,7 +125,7 @@ def MarkDatasetElements(plt, dataset):
             (abscisse[i], ordonne[i]),
             xytext=(5, 8),
             textcoords="offset points",
-            fontsize=7,
+            fontsize=10,
             va="center",
             ha="center",
             # color=dataSet[i].markColor,
